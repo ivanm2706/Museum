@@ -1,13 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Художній музей</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link 
+      rel="shortcut icon" 
+      href="./images/fav.svg" 
+      type="image/x-icon"
+    >
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <div class="const">
+      
+    </div>
+    <div class="header page__header">
+      <div class="container">
+        <nav class="nav header__nav">
+          <div class="nav__wrapper">
+            <a href="#menu" class="icon icon--close"></a>
+
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#gallery" class="nav__link">Галерея</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#actions" class="nav__link">Виставки та події</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#about-us" class="nav__link">Про Нас</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="schedule nav__schedule">
+            <p class="schedule__title">Графік роботи</p>
+
+            <p class="schedule__main">
+              12:00 — 20:00 середа
+              <br>
+              12:00 — 20:00 четвер
+              <br>
+              12:00 — 20:00 п’ятниця
+              <br>
+              11:00 — 19:00 субота
+              <br>
+              11:00 — 19:00 неділя
+            </p>
+
+            <p class="schedule__free-day">
+              Вихідні: понеділок, вівторок
+              <br>
+              Каса припиняє роботу за 1 годину
+              до закриття музею
+            </p>
+          </div>
+        </nav>
+        <h1 class="header__title">ХУДОЖНІЙ МУЗЕЙ</h1>
+
+        <div class="search header__search">
+          <input class="search__input" contenteditable="true" placeholder="КВИТКИ">
+          <div class="search__arrow"></div>
+        </div>
+      </div>
+    </div>
+    
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
