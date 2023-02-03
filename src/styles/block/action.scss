@@ -1,0 +1,93 @@
+.action {
+  padding: 10px 0;
+
+  @include onDesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    // width: 100%;
+    max-width: 670px;
+    margin: 0 auto 20px;
+
+    @include onTablet {
+      margin-bottom: 44px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__info {
+    margin: 0 auto;
+    max-width: 670px;
+  }
+
+  &__name {
+    display: inline;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: $greyColor;
+
+    @include onTablet {
+      font-size: 14px;
+    }
+  }
+
+  &__data {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $greenColor;
+
+    @include onTablet {
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    color: $darkText;
+
+    @include onTablet {
+      font-size: 36px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      top: 50%;
+      margin-left: 10px;
+      transform: translate(0, -30%);
+
+      @include onTablet {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__subtitle {
+    max-width: 460px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: $lightText;
+  }
+}

@@ -1,8 +1,87 @@
 .page {
   font-family: "IBM Plex Sans", sans-serif;
   // font-family: "Montserrat", sans-serif;
+  background-color: $lightColor;
+  scroll-behavior: smooth;
 
   &__body {
-    max-width: 0;
+    margin: 0;
+  }
+
+  &__header {
+    
+    @include onTablet {
+      margin-bottom: 90px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__action {
+    margin-bottom: 100px;
+  }
+
+  &__lection {
+    position: relative;
+    height: 210px;
+    width: 100%;
+    margin-bottom: 180px;
+    background-image: url(../images/actions/action-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include onTablet {
+      height: 390px;
+      background-image: url(../images/actions/action-3-desktop.png);
+      margin-bottom: 200px;
+    }
+
+    @include onDesktop {
+      height: 550px;
+      margin-bottom: 300px;
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 0;
+
+    @include onDesktop {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__sign {
+    padding: 80px 0;
+    background-image: url(../images/sign-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include onDesktop {
+      padding: 160px 0;
+    }
+  }
+
+  &__title {
+    padding: 0 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    color: #0f0e08;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      font-size: 48px;
+      margin-bottom: 48px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 56px;
+    }
   }
 }

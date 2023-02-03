@@ -1,5 +1,68 @@
 .header {
-  background-color: red;
+  position: relative;
   background-image: url(../images/header-back.png);
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  padding-top: 15px;
+  height: 600px;
+
+  @include onTablet {
+    height: 400px;
+    background-position: right;
+    background-size: 50% 100%;
+
+  }
+
+  @include onDesktop {
+    height: 650px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-grow: 1;
+    margin: 0 auto;
+
+    @include onTablet {
+      margin-left: 100px;
+    }
+  }
+
+  &__info {
+
+    @include onlyMobile {
+      position: absolute;
+      padding-top: 20px;
+      inset: 50% 0 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 50%;
+      background-color: $lightColor;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    color: $blackColor;
+    margin-bottom: 20px;
+
+    @include onTablet {
+      text-align: left;
+      font-size: 54px;
+      line-height: 120%;
+      margin-bottom: 40px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 90px;
+    }
+  }
 }

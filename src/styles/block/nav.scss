@@ -1,0 +1,17 @@
+.nav {
+  background-color: $greenColor;
+  display: none;
+
+  & > :first-child::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    rotate: 90deg;
+  }
+
+  @include onTablet {
+    // display: flex;    
+  }
+}

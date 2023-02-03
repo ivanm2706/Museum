@@ -1,0 +1,33 @@
+.button {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border: 1px solid $greenColor;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 100%;
+    width: 50px;
+    border: 1px solid $greenColor;
+    background-color: $greenColor;
+    background-image: url(../images/icons/icon-right-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: -50px;
+    top: -1px;
+  }
+
+  &--orange {
+    border: 1px solid $orangeColor;
+    margin: 0 auto;
+    max-width: 470px;
+    text-align: left;
+    padding-left: 32px;
+
+    &::after {
+      content: none;
+    }
+  }
+}
